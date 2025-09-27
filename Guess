@@ -1,7 +1,7 @@
 math.randomseed(os.time())
 
 repeat
-number = math.random(0, 10)
+number = math.random(0, 100)
 attempts = 7
 tries = 1
 
