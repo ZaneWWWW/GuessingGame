@@ -1,0 +1,29 @@
+math.randomseed(os.time())
+
+repeat
+number = math.random(0, 10)
+attempts = 7
+tries = 1
+
+
+
+while tries <= attempts do
+print("Enter your guess: ")
+yourGuess = tonumber(io.read())
+
+  if yourGuess == number then
+    print("You did it!")
+    break
+  else
+    print("Whoops! Try again.")
+    tries = tries + 1
+  end
+end
+
+if tries > attempts then
+  print("You are out of tries! The number was " .. number)
+  end
+
+ print("Play again? (yes/no)")
+  local answer = io.read()
+until answer ~= "yes"
